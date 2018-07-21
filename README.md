@@ -3,9 +3,6 @@
 
 Este proyecto es la estructura base con Guadua angustifolia, para una casa o área comercial. Su diseño se ha basado en piezas de cerámica encontradas en Ecuador, provincia de Manabí, pertenecientes a la cultura Tolita, que se remonta entre 350 a.C. y 350 d.C. Su cimentaciones están concebidas en hormigón armado, con varillas conectadas a la base, para encajar a la caña.
 
-Este proyecto es la estructura base con Guadua angustifolia, para una casa o área comercial. Su diseño se ha basado en piezas de cerámica encontradas en Ecuador, provincia de Manabí, pertenecientes a la cultura Tolita, que se remonta entre 350 a.C. y 350 d.C. Su cimentaciones están concebidas en hormigón armado, con varillas conectadas a la base, para encajar a la caña
-Este proyecto es la estructura base con Guadua angustifolia, para una casa o área comercial. Su diseño se ha basado en piezas de cerámica encontradas en Ecuador, provincia de Manabí, pertenecientes a la cultura Tolita, que se remonta entre 350 a.C. y 350 d.C. Su cimentaciones están concebidas en hormigón armado, con varillas conectadas a la base, para encajar a la caña.
-
 Los siguientes archivos, podrían también interesar a arquitectos, ingenieros o diseñadores, para adaptar sus futuros proyectos a este modelo, o en definitiva promover el uso de bambú en el mundo. 
 
 
