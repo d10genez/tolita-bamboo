@@ -1,0 +1,5 @@
+parent.0 = multiobjective.params
+parent.1 = simple.params
+
+eval =						ec.multiobjective.nsga2.NSGA2Evaluator
+breed =						ec.multiobjective.nsga2.NSGA2Breeder

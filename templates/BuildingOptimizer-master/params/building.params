@@ -1,0 +1,74 @@
+parent.0 = nsga2.params
+
+# Set up checkpointing
+#Set the seed for random number generation to system time
+seed.0 = time
+#Set the Problem Java class
+eval.problem = building.Building
+
+# No of generations
+generations = 50
+
+# Default Breeding Pipeline 
+pop.subpop.0.species.pipe		     		= ec.vector.breed.VectorMutationPipeline
+pop.subpop.0.species.pipe.source.0			= ec.vector.breed.VectorCrossoverPipeline
+pop.subpop.0.species.pipe.source.0.source.0 = ec.select.TournamentSelection
+pop.subpop.0.species.pipe.source.0.source.1 = same
+# Tournament size for selection
+select.tournament.size 						= 5
+
+#Population size
+pop.subpop.0.size 	= 25	
+
+#Population type : DoubleVectors
+pop.subpop.0.species = ec.vector.FloatVectorSpecies
+pop.subpop.0.species.ind = ec.vector.DoubleVectorIndividual
+
+#Number of building variables
+pop.subpop.0.species.genome-size = 5
+
+#General min and max values need to be supplied for ECJ to work properly
+pop.subpop.0.species.min-gene = 0
+pop.subpop.0.species.max-gene = 10
+
+##Specify min and max values for each building variable
+#Insulation Material
+pop.subpop.0.species.min-gene.0 = 0
+pop.subpop.0.species.max-gene.0 = 8
+
+#Glazing Material
+pop.subpop.0.species.min-gene.1 = 0
+pop.subpop.0.species.max-gene.1 = 12
+
+#HVAC System type
+pop.subpop.0.species.min-gene.2 = 0
+pop.subpop.0.species.max-gene.2 = 8
+
+#Heating Set Point
+pop.subpop.0.species.min-gene.3 = 17
+pop.subpop.0.species.max-gene.3 = 22
+
+#Cooling Set Point
+pop.subpop.0.species.min-gene.4 = 26
+pop.subpop.0.species.max-gene.4 = 30
+
+# Default NSGA2 fitness
+pop.subpop.0.species.fitness = ec.multiobjective.nsga2.NSGA2MultiObjectiveFitness
+
+#Specify number of objectives
+pop.subpop.0.species.fitness.num-objectives = 2
+
+# Maximize or minimize objectives
+pop.subpop.0.species.fitness.maximize = false
+
+# Set crossover type and probability
+pop.subpop.0.species.crossover-type = sbx
+pop.subpop.0.species.crossover-distribution-index = 20
+pop.subpop.0.species.crossover-prob = 0.9
+
+#Set mutation type and probability
+pop.subpop.0.species.mutation-type = polynomial
+pop.subpop.0.species.mutation-distribution-index = 20
+pop.subpop.0.species.mutation-bounded = true
+pop.subpop.0.species.mutation-prob = 0.2
+

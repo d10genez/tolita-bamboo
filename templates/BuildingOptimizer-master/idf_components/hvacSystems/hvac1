@@ -1,0 +1,440 @@
+! VAV system with chilled water and hot water loops.
+  Schedule:Compact,
+    Min OA Sched,            !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: WeekDays CustomDay1 CustomDay2, !- Field 2
+    Until: 8:00,0.0,         !- Field 3
+    Until: 21:00,1.0,        !- Field 5
+    Until: 24:00,0.0,        !- Field 7
+    For: Weekends Holiday,   !- Field 9
+    Until: 24:00,0.0,        !- Field 10
+    For: SummerDesignDay,    !- Field 12
+    Until: 24:00,1.0,        !- Field 13
+    For: WinterDesignDay,    !- Field 15
+    Until: 24:00,1.0;        !- Field 16
+
+  HVACTemplate:Thermostat,
+    All Zones,               !- Name
+    Htg-SetP-Sch,            !- Heating Setpoint Schedule Name
+    ,                        !- Constant Heating Setpoint {C}
+    Clg-SetP-Sch,            !- Cooling Setpoint Schedule Name
+    ;                        !- Constant Cooling Setpoint {C}
+
+  HVACTemplate:Zone:VAV,
+    SPACE1-1,                !- Zone Name
+    VAV Sys 1,               !- Template VAV System Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Constant,                !- Zone Minimum Air Flow Input Method
+    0.3,                     !- Constant Minimum Air Flow Fraction
+    ,                        !- Fixed Minimum Air Flow Rate {m3/s}
+    ,                        !- Minimum Air Flow Fraction Schedule Name
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    0.0,                     !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    0.0,                     !- Outdoor Air Flow Rate per Zone {m3/s}
+    HotWater,                !- Reheat Coil Type
+    ,                        !- Reheat Coil Availability Schedule Name
+    Reverse,                 !- Damper Heating Action
+    ,                        !- Maximum Flow per Zone Floor Area During Reheat {m3/s-m2}
+    ,                        !- Maximum Flow Fraction During Reheat
+    ,                        !- Maximum Reheat Air Temperature {C}
+    ,                        !- Design Specification Outdoor Air Object Name
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize,                !- Baseboard Heating Capacity {W}
+    SystemSupplyAirTemperature,  !- Zone Cooling Design Supply Air Temperature Input Method
+    ,                        !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SupplyAirTemperature,    !- Zone Heating Design Supply Air Temperature Input Method
+    50.0,                    !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Zone:VAV,
+    SPACE2-1,                !- Zone Name
+    VAV Sys 1,               !- Template VAV System Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Constant,                !- Zone Minimum Air Flow Input Method
+    0.3,                     !- Constant Minimum Air Flow Fraction
+    ,                        !- Fixed Minimum Air Flow Rate {m3/s}
+    ,                        !- Minimum Air Flow Fraction Schedule Name
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    0.0,                     !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    0.0,                     !- Outdoor Air Flow Rate per Zone {m3/s}
+    HotWater,                !- Reheat Coil Type
+    ,                        !- Reheat Coil Availability Schedule Name
+    Reverse,                 !- Damper Heating Action
+    ,                        !- Maximum Flow per Zone Floor Area During Reheat {m3/s-m2}
+    ,                        !- Maximum Flow Fraction During Reheat
+    ,                        !- Maximum Reheat Air Temperature {C}
+    ,                        !- Design Specification Outdoor Air Object Name
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize,                !- Baseboard Heating Capacity {W}
+    SystemSupplyAirTemperature,  !- Zone Cooling Design Supply Air Temperature Input Method
+    ,                        !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SupplyAirTemperature,    !- Zone Heating Design Supply Air Temperature Input Method
+    50.0,                    !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Zone:VAV,
+    SPACE3-1,                !- Zone Name
+    VAV Sys 1,               !- Template VAV System Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Constant,                !- Zone Minimum Air Flow Input Method
+    0.3,                     !- Constant Minimum Air Flow Fraction
+    ,                        !- Fixed Minimum Air Flow Rate {m3/s}
+    ,                        !- Minimum Air Flow Fraction Schedule Name
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    0.0,                     !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    0.0,                     !- Outdoor Air Flow Rate per Zone {m3/s}
+    HotWater,                !- Reheat Coil Type
+    ,                        !- Reheat Coil Availability Schedule Name
+    Reverse,                 !- Damper Heating Action
+    ,                        !- Maximum Flow per Zone Floor Area During Reheat {m3/s-m2}
+    ,                        !- Maximum Flow Fraction During Reheat
+    ,                        !- Maximum Reheat Air Temperature {C}
+    ,                        !- Design Specification Outdoor Air Object Name
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize,                !- Baseboard Heating Capacity {W}
+    SystemSupplyAirTemperature,  !- Zone Cooling Design Supply Air Temperature Input Method
+    ,                        !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SupplyAirTemperature,    !- Zone Heating Design Supply Air Temperature Input Method
+    50.0,                    !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Zone:VAV,
+    SPACE4-1,                !- Zone Name
+    VAV Sys 1,               !- Template VAV System Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Constant,                !- Zone Minimum Air Flow Input Method
+    0.3,                     !- Constant Minimum Air Flow Fraction
+    ,                        !- Fixed Minimum Air Flow Rate {m3/s}
+    ,                        !- Minimum Air Flow Fraction Schedule Name
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    0.0,                     !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    0.0,                     !- Outdoor Air Flow Rate per Zone {m3/s}
+    HotWater,                !- Reheat Coil Type
+    ,                        !- Reheat Coil Availability Schedule Name
+    Reverse,                 !- Damper Heating Action
+    ,                        !- Maximum Flow per Zone Floor Area During Reheat {m3/s-m2}
+    ,                        !- Maximum Flow Fraction During Reheat
+    ,                        !- Maximum Reheat Air Temperature {C}
+    ,                        !- Design Specification Outdoor Air Object Name
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize,                !- Baseboard Heating Capacity {W}
+    SystemSupplyAirTemperature,  !- Zone Cooling Design Supply Air Temperature Input Method
+    ,                        !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SupplyAirTemperature,    !- Zone Heating Design Supply Air Temperature Input Method
+    50.0,                    !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Zone:VAV,
+    SPACE5-1,                !- Zone Name
+    VAV Sys 1,               !- Template VAV System Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    Constant,                !- Zone Minimum Air Flow Input Method
+    0.3,                     !- Constant Minimum Air Flow Fraction
+    ,                        !- Fixed Minimum Air Flow Rate {m3/s}
+    ,                        !- Minimum Air Flow Fraction Schedule Name
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    0.0,                     !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    0.0,                     !- Outdoor Air Flow Rate per Zone {m3/s}
+    HotWater,                !- Reheat Coil Type
+    ,                        !- Reheat Coil Availability Schedule Name
+    Reverse,                 !- Damper Heating Action
+    ,                        !- Maximum Flow per Zone Floor Area During Reheat {m3/s-m2}
+    ,                        !- Maximum Flow Fraction During Reheat
+    ,                        !- Maximum Reheat Air Temperature {C}
+    ,                        !- Design Specification Outdoor Air Object Name
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize,                !- Baseboard Heating Capacity {W}
+    SystemSupplyAirTemperature,  !- Zone Cooling Design Supply Air Temperature Input Method
+    ,                        !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SupplyAirTemperature,    !- Zone Heating Design Supply Air Temperature Input Method
+    50.0,                    !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:System:VAV,
+    VAV Sys 1,               !- Name
+    FanAvailSched,           !- System Availability Schedule Name
+    autosize,                !- Supply Fan Maximum Flow Rate {m3/s}
+    autosize,                !- Supply Fan Minimum Flow Rate {m3/s}
+    0.7,                     !- Supply Fan Total Efficiency
+    600,                     !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    ChilledWater,            !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    ,                        !- Cooling Coil Setpoint Schedule Name
+    12.8,                    !- Cooling Coil Design Setpoint {C}
+    HotWater,                !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    ,                        !- Heating Coil Setpoint Schedule Name
+    10.0,                    !- Heating Coil Design Setpoint {C}
+    0.8,                     !- Gas Heating Coil Efficiency
+    0.0,                     !- Gas Heating Coil Parasitic Electric Load {W}
+    None,                    !- Preheat Coil Type
+    ,                        !- Preheat Coil Availability Schedule Name
+    ,                        !- Preheat Coil Setpoint Schedule Name
+    ,                        !- Preheat Coil Design Setpoint {C}
+    0.8,                     !- Gas Preheat Coil Efficiency
+    0.0,                     !- Gas Preheat Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    autosize,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    FixedMinimum,            !- Minimum Outdoor Air Control Type
+    Min OA Sched,            !- Minimum Outdoor Air Schedule Name
+    DifferentialDryBulb,     !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    19,                      !- Economizer Upper Temperature Limit {C}
+    4,                       !- Economizer Lower Temperature Limit {C}
+    ,                        !- Economizer Upper Enthalpy Limit {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Supply Plenum Name
+    PLENUM-1,                !- Return Plenum Name
+    DrawThrough,             !- Supply Fan Placement
+    InletVaneDampers,        !- Supply Fan Part-Load Power Coefficients
+    CycleOnAny,              !- Night Cycle Control
+    ,                        !- Night Cycle Control Zone Name
+    None,                    !- Heat Recovery Type
+    0.70,                    !- Sensible Heat Recovery Effectiveness
+    0.65,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Cooling Coil Setpoint Reset Type
+    None,                    !- Heating Coil Setpoint Reset Type
+    None,                    !- Dehumidification Control Type
+    ,                        !- Dehumidification Control Zone Name
+    60.0,                    !- Dehumidification Setpoint {percent}
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690.0,                  !- Humidifier Rated Electric Power {W}
+    ,                        !- Humidifier Control Zone Name
+    30.0,                    !- Humidifier Setpoint {percent}
+    NonCoincident;           !- Sizing Option
+
+  HVACTemplate:Plant:ChilledWaterLoop,
+    Chilled Water Loop,      !- Name
+    ,                        !- Pump Schedule Name
+    INTERMITTENT,            !- Pump Control Type
+    Default,                 !- Chiller Plant Operation Scheme Type
+    ,                        !- Chiller Plant Equipment Operation Schemes Name
+    ,                        !- Chilled Water Setpoint Schedule Name
+    7.22,                    !- Chilled Water Design Setpoint {C}
+    ConstantPrimaryNoSecondary,  !- Chilled Water Pump Configuration
+    179352,                  !- Primary Chilled Water Pump Rated Head {Pa}
+    179352,                  !- Secondary Chilled Water Pump Rated Head {Pa}
+    Default,                 !- Condenser Plant Operation Scheme Type
+    ,                        !- Condenser Equipment Operation Schemes Name
+    ,                        !- Condenser Water Temperature Control Type
+    ,                        !- Condenser Water Setpoint Schedule Name
+    29.4,                    !- Condenser Water Design Setpoint {C}
+    179352,                  !- Condenser Water Pump Rated Head {Pa}
+    None,                    !- Chilled Water Setpoint Reset Type
+    12.2,                    !- Chilled Water Setpoint at Outdoor Dry-Bulb Low {C}
+    15.6,                    !- Chilled Water Reset Outdoor Dry-Bulb Low {C}
+    6.7,                     !- Chilled Water Setpoint at Outdoor Dry-Bulb High {C}
+    26.7;                    !- Chilled Water Reset Outdoor Dry-Bulb High {C}
+
+  HVACTemplate:Plant:Chiller:ObjectReference,
+    Main Chiller Connection, !- Name
+    Chiller:Electric:EIR,    !- Chiller Object Type
+    Main Chiller,            !- Chiller Name
+    1;                       !- Priority
+
+  Chiller:Electric:EIR,
+    Main Chiller,            !- Name
+    autosize,                !- Reference Capacity {W}
+    3.2,                     !- Reference COP {W/W}
+    6.67,                    !- Reference Leaving Chilled Water Temperature {C}
+    29.4,                    !- Reference Entering Condenser Fluid Temperature {C}
+    autosize,                !- Reference Chilled Water Flow Rate {m3/s}
+    autosize,                !- Reference Condenser Fluid Flow Rate {m3/s}
+    Main Chiller RecipCapFT, !- Cooling Capacity Function of Temperature Curve Name
+    Main Chiller RecipEIRFT, !- Electric Input to Cooling Output Ratio Function of Temperature Curve Name
+    Main Chiller RecipEIRFPLR,  !- Electric Input to Cooling Output Ratio Function of Part Load Ratio Curve Name
+    0.0,                     !- Minimum Part Load Ratio
+    1.0,                     !- Maximum Part Load Ratio
+    1.0,                     !- Optimum Part Load Ratio
+    0.25,                    !- Minimum Unloading Ratio
+    Main Chiller ChW Inlet,  !- Chilled Water Inlet Node Name
+    Main Chiller ChW Outlet, !- Chilled Water Outlet Node Name
+    Main Chiller Cnd Inlet,  !- Condenser Inlet Node Name
+    Main Chiller Cnd Outlet, !- Condenser Outlet Node Name
+    WaterCooled,             !- Condenser Type
+    ,                        !- Condenser Fan Power Ratio {W/W}
+    1,                       !- Fraction of Compressor Electric Consumption Rejected by Condenser
+    5.0,                     !- Leaving Chilled Water Lower Temperature Limit {C}
+    ConstantFlow,            !- Chiller Flow Mode
+    0,                       !- Design Heat Recovery Water Flow Rate {m3/s}
+    ,                        !- Heat Recovery Inlet Node Name
+    ,                        !- Heat Recovery Outlet Node Name
+    1.0;                     !- Sizing Factor
+
+! Cooling Capacity Function of Temperature Curve for open or hermetic water-cooled reciprocating chillers
+! Same as DOE-2.1E HERM-REC-CAP-FT (CCAPT4) and OPEN-REC-CAP-FT (CCAPT2)
+
+  Curve:Biquadratic,
+    Main Chiller RecipCapFT, !- Name
+    0.507883,                !- Coefficient1 Constant
+    0.145228,                !- Coefficient2 x
+    -0.00625644,             !- Coefficient3 x**2
+    -0.0011178,              !- Coefficient4 y
+    -0.0001296,              !- Coefficient5 y**2
+    -0.00028188,             !- Coefficient6 x*y
+    5,                       !- Minimum Value of x
+    10,                      !- Maximum Value of x
+    24,                      !- Minimum Value of y
+    35;                      !- Maximum Value of y
+
+! Energy Input to Cooling Output Ratio Function of Temperature Curve for open or hermetic water-cooled reciprocating chillers
+! Same as DOE-2.1E HERM-REC-EIR-FT (EIRT4) and OPEN-REC-EIR-FT (EIRT2)
+
+  Curve:Biquadratic,
+    Main Chiller RecipEIRFT, !- Name
+    1.03076,                 !- Coefficient1 Constant
+    -0.103536,               !- Coefficient2 x
+    0.00710208,              !- Coefficient3 x**2
+    0.0093186,               !- Coefficient4 y
+    0.00031752,              !- Coefficient5 y**2
+    -0.00104328,             !- Coefficient6 x*y
+    5,                       !- Minimum Value of x
+    10,                      !- Maximum Value of x
+    24,                      !- Minimum Value of y
+    35;                      !- Maximum Value of y
+
+! Energy Input to Cooling Output Ratio Function of Part Load Ratio Curve for open or hermetic water-cooled reciprocating chillers
+! Same as DOE-2.1E HERM-REC-EIR-FPLR (EIRPLR4) and OPEN-REC-EIR-FPLR (EIRPLR2)
+
+  Curve:Quadratic,
+    Main Chiller RecipEIRFPLR,  !- Name
+    0.088065,                !- Coefficient1 Constant
+    1.137742,                !- Coefficient2 x
+    -0.225806,               !- Coefficient3 x**2
+    0,                       !- Minimum Value of x
+    1;                       !- Maximum Value of x
+
+  HVACTemplate:Plant:Tower:ObjectReference,
+    Main Tower Connection,   !- Name
+    CoolingTower:SingleSpeed,!- Cooling Tower Object Type
+    Main Tower,              !- Cooling Tower Name
+    1;                       !- Priority
+
+  CoolingTower:SingleSpeed,
+    Main Tower,              !- Name
+    Main Tower CndW Inlet,   !- Water Inlet Node Name
+    Main Tower CndW Outlet,  !- Water Outlet Node Name
+    autosize,                !- Design Water Flow Rate {m3/s}
+    autosize,                !- Design Air Flow Rate {m3/s}
+    autosize,                !- Fan Power at Design Air Flow Rate {W}
+    autosize,                !- U-Factor Times Area Value at Design Air Flow Rate {W/K}
+    autosize,                !- Air Flow Rate in Free Convection Regime {m3/s}
+    autosize,                !- U-Factor Times Area Value at Free Convection Air Flow Rate {W/K}
+    UFactorTimesAreaAndDesignWaterFlowRate,  !- Performance Input Method
+    ,                        !- Nominal Capacity {W}
+    ,                        !- Free Convection Capacity {W}
+    ,                        !- Basin Heater Capacity {W/K}
+    ,                        !- Basin Heater Setpoint Temperature {C}
+    ,                        !- Basin Heater Operating Schedule Name
+    SaturatedExit,           !- Evaporation Loss Mode
+    ,                        !- Evaporation Loss Factor {percent/K}
+    0.008,                   !- Drift Loss Percent {percent}
+    ConcentrationRatio,      !- Blowdown Calculation Mode
+    3,                       !- Blowdown Concentration Ratio
+    ,                        !- Blowdown Makeup Water Usage Schedule Name
+    ,                        !- Supply Water Storage Tank Name
+    Main Tower Cooling Tower Outdoor Air Inlet Node,  !- Outdoor Air Inlet Node Name
+    FanCycling,              !- Capacity Control
+    ,                        !- Number of Cells
+    ,                        !- Cell Control
+    ,                        !- Cell Minimum  Water Flow Rate Fraction
+    ,                        !- Cell Maximum Water Flow Rate Fraction
+    1.0;                     !- Sizing Factor
+
+  OutdoorAir:Node,
+    Main Tower Cooling Tower Outdoor Air Inlet Node,  !- Name
+    -1;                      !- Height Above Ground {m}
+
+  HVACTemplate:Plant:HotWaterLoop,
+    Hot Water Loop,          !- Name
+    ,                        !- Pump Schedule Name
+    INTERMITTENT,            !- Pump Control Type
+    Default,                 !- Hot Water Plant Operation Scheme Type
+    ,                        !- Hot Water Plant Equipment Operation Schemes Name
+    ,                        !- Hot Water Setpoint Schedule Name
+    82,                      !- Hot Water Design Setpoint {C}
+    ConstantFlow,            !- Hot Water Pump Configuration
+    179352,                  !- Hot Water Pump Rated Head {Pa}
+    OutdoorAirTemperatureReset,  !- Hot Water Setpoint Reset Type
+    82.2,                    !- Hot Water Setpoint at Outdoor Dry-Bulb Low {C}
+    -6.7,                    !- Hot Water Reset Outdoor Dry-Bulb Low {C}
+    65.6,                    !- Hot Water Setpoint at Outdoor Dry-Bulb High {C}
+    10;                      !- Hot Water Reset Outdoor Dry-Bulb High {C}
+
+  HVACTemplate:Plant:Boiler:ObjectReference,
+    Main Boiler Connection,  !- Name
+    Boiler:HotWater,         !- Boiler Object Type
+    Main Boiler,             !- Boiler Name
+    1;                       !- Priority
+
+  Boiler:HotWater,
+    Main Boiler,             !- Name
+    NaturalGas,              !- Fuel Type
+    autosize,                !- Nominal Capacity {W}
+    0.8,                     !- Nominal Thermal Efficiency
+    LeavingBoiler,           !- Efficiency Curve Temperature Evaluation Variable
+    Main Boiler Efficiency Curve,  !- Normalized Boiler Efficiency Curve Name
+    81,                      !- Design Water Outlet Temperature {C}
+    autosize,                !- Design Water Flow Rate {m3/s}
+    0.0,                     !- Minimum Part Load Ratio
+    1.1,                     !- Maximum Part Load Ratio
+    1.0,                     !- Optimum Part Load Ratio
+    Main Boiler HW Inlet,    !- Boiler Water Inlet Node Name
+    Main Boiler HW Outlet,   !- Boiler Water Outlet Node Name
+    100.0,                   !- Water Outlet Upper Temperature Limit {C}
+    ConstantFlow,            !- Boiler Flow Mode
+    0,                       !- Parasitic Electric Load {W}
+    1.0;                     !- Sizing Factor
+
+  Curve:Quadratic,
+    Main Boiler Efficiency Curve,  !- Name
+    0.97,                    !- Coefficient1 Constant
+    0.0633,                  !- Coefficient2 x
+    -0.0333,                 !- Coefficient3 x**2
+    0.0,                     !- Minimum Value of x
+    1.0;                     !- Maximum Value of x

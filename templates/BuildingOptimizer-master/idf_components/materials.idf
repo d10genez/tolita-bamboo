@@ -1,0 +1,469 @@
+ Material,
+    G01 16mm gypsum board,   !- Name
+    MediumSmooth,            !- Roughness
+    0.0159,                  !- Thickness {m}
+    0.16,                    !- Conductivity {W/m-K}
+    800,                     !- Density {kg/m3}
+    1090;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    G01a 19mm gypsum board,  !- Name
+    MediumSmooth,            !- Roughness
+    0.019,                   !- Thickness {m}
+    0.16,                    !- Conductivity {W/m-K}
+    800,                     !- Density {kg/m3}
+    1090;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    G02 16mm plywood,        !- Name
+    Smooth,                  !- Roughness
+    0.0159,                  !- Thickness {m}
+    0.12,                    !- Conductivity {W/m-K}
+    544,                     !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    G03 13mm fiberboard sheathing,  !- Name
+    Smooth,                  !- Roughness
+    0.0127,                  !- Thickness {m}
+    0.07,                    !- Conductivity {W/m-K}
+    400,                     !- Density {kg/m3}
+    1300;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    G04 13mm wood,           !- Name
+    MediumSmooth,            !- Roughness
+    0.0127,                  !- Thickness {m}
+    0.15,                    !- Conductivity {W/m-K}
+    608,                     !- Density {kg/m3}
+    1630;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    G05 25mm wood,           !- Name
+    MediumSmooth,            !- Roughness
+    0.0254,                  !- Thickness {m}
+    0.15,                    !- Conductivity {W/m-K}
+    608,                     !- Density {kg/m3}
+    1630;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    G06 50mm wood,           !- Name
+    MediumSmooth,            !- Roughness
+    0.0508,                  !- Thickness {m}
+    0.15,                    !- Conductivity {W/m-K}
+    608,                     !- Density {kg/m3}
+    1630;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    G07 100mm wood,          !- Name
+    MediumSmooth,            !- Roughness
+    0.1016,                  !- Thickness {m}
+    0.15,                    !- Conductivity {W/m-K}
+    608,                     !- Density {kg/m3}
+    1630;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    I01 25mm insulation board,  !- Name
+    MediumRough,             !- Roughness
+    0.0254,                  !- Thickness {m}
+    0.03,                    !- Conductivity {W/m-K}
+    43,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    I02 50mm insulation board,  !- Name
+    MediumRough,             !- Roughness
+    0.0508,                  !- Thickness {m}
+    0.03,                    !- Conductivity {W/m-K}
+    43,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    I03 75mm insulation board,  !- Name
+    MediumRough,             !- Roughness
+    0.0762,                  !- Thickness {m}
+    0.03,                    !- Conductivity {W/m-K}
+    43,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    I04 89mm batt insulation,!- Name
+    VeryRough,               !- Roughness
+    0.0894,                  !- Thickness {m}
+    0.05,                    !- Conductivity {W/m-K}
+    19,                      !- Density {kg/m3}
+    960;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    I05 154mm batt insulation,  !- Name
+    VeryRough,               !- Roughness
+    0.1544,                  !- Thickness {m}
+    0.05,                    !- Conductivity {W/m-K}
+    19,                      !- Density {kg/m3}
+    960;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    I06 244mm batt insulation,  !- Name
+    VeryRough,               !- Roughness
+    0.2438,                  !- Thickness {m}
+    0.05,                    !- Conductivity {W/m-K}
+    19,                      !- Density {kg/m3}
+    960;                     !- Specific Heat {J/kg-K}
+  Material,
+    Gypsum or plaster board - 9.5mm,  !- Name
+    MediumSmooth,            !- Roughness
+    0.0095,                  !- Thickness {m}
+    0.58,                    !- Conductivity {W/m-K}
+    800,                     !- Density {kg/m3}
+    1090;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Gypsum or plaster board - 2.7mm,  !- Name
+    MediumSmooth,            !- Roughness
+    0.0027,                  !- Thickness {m}
+    0.58,                    !- Conductivity {W/m-K}
+    800,                     !- Density {kg/m3}
+    1090;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Gypsum or plaster board - 5.9mm,  !- Name
+    MediumSmooth,            !- Roughness
+    0.0059,                  !- Thickness {m}
+    0.58,                    !- Conductivity {W/m-K}
+    800,                     !- Density {kg/m3}
+    1090;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Plywood (Douglas Fir) - 6.4mm,  !- Name
+    MediumSmooth,            !- Roughness
+    0.0064,                  !- Thickness {m}
+    0.12,                    !- Conductivity {W/m-K}
+    540,                     !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Plywood (Douglas Fir) - 9.5mm,  !- Name
+    Smooth,                  !- Roughness
+    0.0095,                  !- Thickness {m}
+    0.12,                    !- Conductivity {W/m-K}
+    540,                     !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Plywood (Douglas Fir) - 12.7mm,  !- Name
+    Smooth,                  !- Roughness
+    0.0127,                  !- Thickness {m}
+    0.12,                    !- Conductivity {W/m-K}
+    540,                     !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Plywood (Douglas Fir) - 15.9mm,  !- Name
+    Smooth,                  !- Roughness
+    0.0159,                  !- Thickness {m}
+    0.12,                    !- Conductivity {W/m-K}
+    540,                     !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Plywood or wood panels - 19.0mm,  !- Name
+    Smooth,                  !- Roughness
+    0.019,                   !- Thickness {m}
+    0.12,                    !- Conductivity {W/m-K}
+    540,                     !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Sheathing - regular density - 12.7mm,  !- Name
+    Smooth,                  !- Roughness
+    0.0127,                  !- Thickness {m}
+    0.055,                   !- Conductivity {W/m-K}
+    290,                     !- Density {kg/m3}
+    1300;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Sheathing - regular density - 19.8mm,  !- Name
+    Smooth,                  !- Roughness
+    0.0198,                  !- Thickness {m}
+    0.055,                   !- Conductivity {W/m-K}
+    290,                     !- Density {kg/m3}
+    1300;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Sheathing intermediate density - 12.7mm,  !- Name
+    Smooth,                  !- Roughness
+    0.0127,                  !- Thickness {m}
+    0.057,                   !- Conductivity {W/m-K}
+    350,                     !- Density {kg/m3}
+    1300;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Nail-base sheathing - 12.7mm,  !- Name
+    Smooth,                  !- Roughness
+    0.0127,                  !- Thickness {m}
+    0.057,                   !- Conductivity {W/m-K}
+    400,                     !- Density {kg/m3}
+    1300;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Shingle backer - 9.5mm,  !- Name
+    Smooth,                  !- Roughness
+    0.0095,                  !- Thickness {m}
+    0.063,                   !- Conductivity {W/m-K}
+    290,                     !- Density {kg/m3}
+    1300;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Shingle backer - 7.9mm,  !- Name
+    Smooth,                  !- Roughness
+    0.0079,                  !- Thickness {m}
+    0.063,                   !- Conductivity {W/m-K}
+    290,                     !- Density {kg/m3}
+    1300;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Sound deadening board,   !- Name
+    Smooth,                  !- Roughness
+    0.0127,                  !- Thickness {m}
+    0.063,                   !- Conductivity {W/m-K}
+    240,                     !- Density {kg/m3}
+    1260;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Tile and lay-in panels - plain or acoustic - 12.7mm,  !- Name
+    MediumSmooth,            !- Roughness
+    0.0127,                  !- Thickness {m}
+    0.057,                   !- Conductivity {W/m-K}
+    290,                     !- Density {kg/m3}
+    590;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    Tile and lay-in panels - plain or acoustic - 19mm,  !- Name
+    MediumSmooth,            !- Roughness
+    0.019,                   !- Thickness {m}
+    0.057,                   !- Conductivity {W/m-K}
+    290,                     !- Density {kg/m3}
+    590;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    Laminated paperboard,    !- Name
+    MediumSmooth,            !- Roughness
+    0.0032,                  !- Thickness {m}
+    0.072,                   !- Conductivity {W/m-K}
+    480,                     !- Density {kg/m3}
+    1380;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Homogeneous board from repulped paper,  !- Name
+    MediumSmooth,            !- Roughness
+    0.0032,                  !- Thickness {m}
+    0.072,                   !- Conductivity {W/m-K}
+    480,                     !- Density {kg/m3}
+    1170;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Hardboard Medium density,!- Name
+    Smooth,                  !- Roughness
+    0.019,                   !- Thickness {m}
+    0.105,                   !- Conductivity {W/m-K}
+    800,                     !- Density {kg/m3}
+    1300;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Hardboard High density - service-tempered grade and service grade,  !- Name
+    Smooth,                  !- Roughness
+    0.019,                   !- Thickness {m}
+    0.82,                    !- Conductivity {W/m-K}
+    880,                     !- Density {kg/m3}
+    1340;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Hardboard High density - standard-tempered grade,  !- Name
+    Smooth,                  !- Roughness
+    0.019,                   !- Thickness {m}
+    0.144,                   !- Conductivity {W/m-K}
+    1010,                    !- Density {kg/m3}
+    1340;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Particleboard Low density,  !- Name
+    MediumSmooth,            !- Roughness
+    0.019,                   !- Thickness {m}
+    0.102,                   !- Conductivity {W/m-K}
+    590,                     !- Density {kg/m3}
+    1300;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Particleboard Medium density,  !- Name
+    MediumSmooth,            !- Roughness
+    0.019,                   !- Thickness {m}
+    0.135,                   !- Conductivity {W/m-K}
+    800,                     !- Density {kg/m3}
+    1300;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Particleboard High density,  !- Name
+    MediumSmooth,            !- Roughness
+    0.019,                   !- Thickness {m}
+    0.17,                    !- Conductivity {W/m-K}
+    1000,                    !- Density {kg/m3}
+    1300;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Particleboard Underlayment - 15.9mm,  !- Name
+    MediumRough,             !- Roughness
+    0.0159,                  !- Thickness {m}
+    0.311,                   !- Conductivity {W/m-K}
+    640,                     !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Waferboard,              !- Name
+    MediumSmooth,            !- Roughness
+    0.019,                   !- Thickness {m}
+    0.091,                   !- Conductivity {W/m-K}
+    590,                     !- Density {kg/m3}
+    1300;                    !- Specific Heat {J/kg-K}
+    Material,
+    Insulation: Cellular glass - 25mm,  !- Name
+    MediumRough,             !- Roughness
+    0.025,                   !- Thickness {m}
+    0.05,                    !- Conductivity {W/m-K}
+    136,                     !- Density {kg/m3}
+    750;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Cellular glass - 50mm,  !- Name
+    MediumRough,             !- Roughness
+    0.05,                    !- Thickness {m}
+    0.05,                    !- Conductivity {W/m-K}
+    136,                     !- Density {kg/m3}
+    750;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Cellular glass - 75mm,  !- Name
+    MediumRough,             !- Roughness
+    0.075,                   !- Thickness {m}
+    0.05,                    !- Conductivity {W/m-K}
+    136,                     !- Density {kg/m3}
+    750;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Glass fiber - organic bonded - 25mm,  !- Name
+    MediumRough,             !- Roughness
+    0.025,                   !- Thickness {m}
+    0.036,                   !- Conductivity {W/m-K}
+    64,                      !- Density {kg/m3}
+    960;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Glass fiber - organic bonded - 50mm,  !- Name
+    MediumRough,             !- Roughness
+    0.05,                    !- Thickness {m}
+    0.036,                   !- Conductivity {W/m-K}
+    140,                     !- Density {kg/m3}
+    960;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Glass fiber - organic bonded - 75mm,  !- Name
+    MediumRough,             !- Roughness
+    0.075,                   !- Thickness {m}
+    0.036,                   !- Conductivity {W/m-K}
+    140,                     !- Density {kg/m3}
+    960;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Expanded perlite - organic bonded - 25mm,  !- Name
+    MediumSmooth,            !- Roughness
+    0.025,                   !- Thickness {m}
+    0.052,                   !- Conductivity {W/m-K}
+    16,                      !- Density {kg/m3}
+    1260;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Expanded rubber (rigid) - 25mm,  !- Name
+    MediumRough,             !- Roughness
+    0.025,                   !- Thickness {m}
+    0.032,                   !- Conductivity {W/m-K}
+    72,                      !- Density {kg/m3}
+    1680;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Expanded polystyrene - extruded (smooth skin surface) (CFC-12 exp.),  !- Name
+    MediumSmooth,            !- Roughness
+    0.025,                   !- Thickness {m}
+    0.029,                   !- Conductivity {W/m-K}
+    29,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Expanded polystyrene - extruded (smooth skin surface) (HCFC-142b exp.),  !- Name
+    MediumSmooth,            !- Roughness
+    0.025,                   !- Thickness {m}
+    0.029,                   !- Conductivity {W/m-K}
+    29,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Expanded polystyrene - molded beads - 16kg/m3 density,  !- Name
+    VeryRough,               !- Roughness
+    0.025,                   !- Thickness {m}
+    0.037,                   !- Conductivity {W/m-K}
+    16,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Expanded polystyrene - molded beads - 20kg/m3 density,  !- Name
+    VeryRough,               !- Roughness
+    0.025,                   !- Thickness {m}
+    0.036,                   !- Conductivity {W/m-K}
+    20,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Expanded polystyrene - molded beads - 24kg/m3 density,  !- Name
+    VeryRough,               !- Roughness
+    0.025,                   !- Thickness {m}
+    0.035,                   !- Conductivity {W/m-K}
+    24,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Expanded polystyrene - molded beads - 28 k6/m3 density,  !- Name
+    VeryRough,               !- Roughness
+    0.025,                   !- Thickness {m}
+    0.035,                   !- Conductivity {W/m-K}
+    28,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Expanded polystyrene - molded beads - 32 kg/m3 density,  !- Name
+    VeryRough,               !- Roughness
+    0.025,                   !- Thickness {m}
+    0.033,                   !- Conductivity {W/m-K}
+    32,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Cellular polyurethane/polyisocyanuratei (CFC11 exp.) (unfaced),  !- Name
+    Rough,                   !- Roughness
+    0.025,                   !- Thickness {m}
+    0.0245,                  !- Conductivity {W/m-K}
+    24,                      !- Density {kg/m3}
+    1590;                    !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Cellular polyisocyanuratei (CFC-11 exp.) (gaspermeable facers),  !- Name
+    Rough,                   !- Roughness
+    0.025,                   !- Thickness {m}
+    0.0245,                  !- Conductivity {W/m-K}
+    32,                      !- Density {kg/m3}
+    920;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Cellular polyisocyanuratej (CFC-11 exp.) (gasimpermeable facers),  !- Name
+    Rough,                   !- Roughness
+    0.025,                   !- Thickness {m}
+    0.02,                    !- Conductivity {W/m-K}
+    32,                      !- Density {kg/m3}
+    920;                     !- Specific Heat {J/kg-K}
