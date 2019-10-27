@@ -1,7 +1,7 @@
 
 # tolita-bamboo 
 
-Este proyecto es una nave en Bambú o Guadua angustifoli. Tienen una planta libre que puede variar de acuerdo a requerimientos. Se incluyen procedimientos de verificación y simulaciones en EnergyPlus que podrían replicarse a cualquier proyecto.
+Este proyecto es una nave en Bambú o Guadua angustifoli. Tienen una planta libre que puede variar de acuerdo a requerimientos. Tiene una luz máxima entre centros de columna de seis metros. Se incluyen procedimientos de verificación estructurales y simulaciones en EnergyPlus que podrían replicarse a cualquier proyecto.
 El diseño se ha basado en piezas de cerámica encontradas en Ecuador, provincia de Manabí, pertenecientes a la cultura Tolita, que se remonta entre 350 a.C. y 350 d.C. Su cimentaciones están concebidas en hormigón armado, con varillas conectadas a la base, para encajar a la caña.
 
 Los siguientes archivos, podrían también interesar a arquitectos, ingenieros o diseñadores, para adaptar sus futuros proyectos a este modelo, o en definitiva promover el uso de bambú en el mundo. 
