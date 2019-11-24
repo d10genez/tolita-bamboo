@@ -17,15 +17,7 @@ _tolita-bamboo.dwg: Archivo con los planos: Planta cimentación, Planta entrepis
 
 _tolita-bamboo.pln: Archivo Archicad, con los planos antes descritos y además vistas en perspectiva 3D.
 
-_PLANTA CIMENTACIÓN Y ENTREPISO.PDF: Archivo PDF, extraído del archivo tolita-bamboo.dwg
 
-_PLANTA ENTREPISO Y ESTRUCTURA CUBIERTA.PDF: Archivo PDF, extraído del archivo tolita-bamboo.dwg
-
-_ELEVACIÓN FRONTAL Y LATERAL DERECHA.PDF: Archivo PDF, extraído del archivo tolita-bamboo.dwg
-
-_ELEVACIÓN POSTERIOR Y LATERAL IZQUIERDA.PDF: Archivo PDF, extraído del archivo tolita-bamboo.dwg
-
-_CORTE X Y CORTE Y: Archivo PDF, extraído del archivo tolita-bamboo.dwg
 
 _tolita-bamboo-detalles.dwg: Archivo DWG, que contiene los detalles constructivos de las uniones usadas para la estructura. Exíste tres tipos de uniones: estructura, de presión y de amarre.
 
@@ -34,6 +26,10 @@ _DETALLES.PDF: Archivo PDF, extraído del archivo tolita-bamboo-detalles.dwg
 _tolita-bamboo-procesoconstructivo.dwg: Archivo DWG, contiene en detalle el proceso constructivo paso a paso para armar la estructura. 
 
 _PROCESO CONSTRUCTIVO.PDF, extraído del archivo tolita-bamboo-procesoconstructivo.dwg
+
+_tolita.bamboo.mat.blend, extraído del archivo tolita.bamboo.mat.blend
+
+
 
 # Terminos de uso
 
