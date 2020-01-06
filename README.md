@@ -6,9 +6,7 @@ El diseño se ha basado en piezas de cerámica encontradas en Ecuador, provincia
 
 Los siguientes archivos, podrían también interesar a arquitectos, ingenieros o diseñadores, para adaptar sus futuros proyectos a este modelo, o en definitiva promover el uso de bambú en el mundo. 
 
-![alt tag](http://www.cinemonstruo.com/tolita-bamboo/tolita-bamboo_2.0.png)
-
-![alt tag](http://www.cinemonstruo.com/tolita-bamboo/tolita-bamboo_2.0.png)
+![alt tag](http://www.cinemonstruo.com/tolita-bamboo/tolita-bamboo-2.0.png)
 
 ![alt tag](http://www.cinemonstruo.com/tolita-bamboo/tolita-perspectiva.png)
 
