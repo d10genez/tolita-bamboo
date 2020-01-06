@@ -6,6 +6,7 @@ El diseño se ha basado en piezas de cerámica encontradas en Ecuador, provincia
 
 Los siguientes archivos, podrían también interesar a arquitectos, ingenieros o diseñadores, para adaptar sus futuros proyectos a este modelo, o en definitiva promover el uso de bambú en el mundo. 
 
+![alt tag](http://www.cinemonstruo.com/tolita-bamboo/tolita-bamboo_2.0.png)
 
 ![alt tag](http://www.cinemonstruo.com/tolita-bamboo/tolita-perspectiva.png)
 
@@ -13,11 +14,9 @@ Los siguientes archivos, podrían también interesar a arquitectos, ingenieros o
 
 ![alt tag](http://www.cinemonstruo.com/tolita-bamboo/tolita-frontal.png)
 
-_tolita-bamboo.dwg: Archivo con los planos: Planta cimentación, Planta entrepiso y estructura cubierta, Vista frontal y lateral derecha, Vista posterior y lateral izquierda, Corte X y Corte Y 
+_tolita-bamboo-mat.blend: Archivo modelado 3D en Blender con dos posibles adaptaciones.
 
-_tolita-bamboo.pln: Archivo Archicad, con los planos antes descritos y además vistas en perspectiva 3D.
-
-
+_TOLITA.FREECAD.FCStd: Archivo modelado 3D en FreeCAD
 
 _tolita-bamboo-detalles.dwg: Archivo DWG, que contiene los detalles constructivos de las uniones usadas para la estructura. Exíste tres tipos de uniones: estructura, de presión y de amarre.
 
@@ -27,7 +26,7 @@ _tolita-bamboo-procesoconstructivo.dwg: Archivo DWG, contiene en detalle el proc
 
 _PROCESO CONSTRUCTIVO.PDF, extraído del archivo tolita-bamboo-procesoconstructivo.dwg
 
-_tolita.bamboo.mat.blend, extraído del archivo tolita.bamboo.mat.blend
+
 
 
 
