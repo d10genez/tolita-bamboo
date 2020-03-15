@@ -1,0 +1,382 @@
+! FurnaceDX zone thermostats and unitary furnace with DX cooling.
+  Schedule:Constant,AlwaysOn,On/Off,1.0;
+   Schedule:Compact,
+    Min OA Sched,            !- Name
+    Fraction,                !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: WeekDays CustomDay1 CustomDay2, !- Field 2
+    Until: 8:00,0.0,         !- Field 3
+    Until: 21:00,1.0,        !- Field 5
+    Until: 24:00,0.0,        !- Field 7
+    For: Weekends Holiday,   !- Field 9
+    Until: 24:00,0.0,        !- Field 10
+    For: SummerDesignDay,    !- Field 12
+    Until: 24:00,1.0,        !- Field 13
+    For: WinterDesignDay,    !- Field 15
+    Until: 24:00,1.0;        !- Field 16
+  HVACTemplate:Thermostat,
+    All Zones,               !- Name
+    Htg-SetP-Sch,            !- Heating Setpoint Schedule Name
+    ,                        !- Constant Heating Setpoint {C}
+    Clg-SetP-Sch,            !- Cooling Setpoint Schedule Name
+    ;                        !- Constant Cooling Setpoint {C}
+
+  HVACTemplate:Zone:Unitary,
+    SPACE1-1,                !- Zone Name
+    Furnace DX 1-1,          !- Template Unitary System Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    0.0,                     !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    0.0,                     !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize,                !- Baseboard Heating Capacity {W}
+    SystemSupplyAirTemperature,  !- Zone Cooling Design Supply Air Temperature Input Method
+    ,                        !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SystemSupplyAirTemperature,  !- Zone Heating Design Supply Air Temperature Input Method
+    ,                        !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Zone:Unitary,
+    SPACE2-1,                !- Zone Name
+    Furnace DX 2-1,          !- Template Unitary System Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    0.0,                     !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    0.0,                     !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize,                !- Baseboard Heating Capacity {W}
+    SystemSupplyAirTemperature,  !- Zone Cooling Design Supply Air Temperature Input Method
+    ,                        !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SystemSupplyAirTemperature,  !- Zone Heating Design Supply Air Temperature Input Method
+    ,                        !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Zone:Unitary,
+    SPACE3-1,                !- Zone Name
+    Furnace DX 3-1,          !- Template Unitary System Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    0.0,                     !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    0.0,                     !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize,                !- Baseboard Heating Capacity {W}
+    SystemSupplyAirTemperature,  !- Zone Cooling Design Supply Air Temperature Input Method
+    ,                        !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SystemSupplyAirTemperature,  !- Zone Heating Design Supply Air Temperature Input Method
+    ,                        !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Zone:Unitary,
+    SPACE4-1,                !- Zone Name
+    Furnace DX 4-1,          !- Template Unitary System Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    0.0,                     !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    0.0,                     !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize,                !- Baseboard Heating Capacity {W}
+    SystemSupplyAirTemperature,  !- Zone Cooling Design Supply Air Temperature Input Method
+    ,                        !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SystemSupplyAirTemperature,  !- Zone Heating Design Supply Air Temperature Input Method
+    ,                        !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Zone:Unitary,
+    SPACE5-1,                !- Zone Name
+    Furnace DX 5-1,          !- Template Unitary System Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Supply Air Maximum Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    0.0,                     !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    0.0,                     !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    None,                    !- Baseboard Heating Type
+    ,                        !- Baseboard Heating Availability Schedule Name
+    autosize,                !- Baseboard Heating Capacity {W}
+    SystemSupplyAirTemperature,  !- Zone Cooling Design Supply Air Temperature Input Method
+    ,                        !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SystemSupplyAirTemperature,  !- Zone Heating Design Supply Air Temperature Input Method
+    ,                        !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:System:Unitary,
+    Furnace DX 1-1,          !- Name
+    AlwaysOn,                !- System Availability Schedule Name
+    SPACE1-1,                !- Control Zone or Thermostat Location Name
+    autosize,                !- Supply Fan Maximum Flow Rate {m3/s}
+    FanAvailSched,           !- Supply Fan Operating Mode Schedule Name
+    0.7,                     !- Supply Fan Total Efficiency
+    600,                     !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    14.0,                    !- Cooling Design Supply Air Temperature {C}
+    autosize,                !- Cooling Coil Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3,                       !- Cooling Coil Rated COP {W/W}
+    Gas,                     !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    50.0,                    !- Heating Design Supply Air Temperature {C}
+    autosize,                !- Heating Coil Capacity {W}
+    0.8,                     !- Gas Heating Coil Efficiency
+    0.0,                     !- Gas Heating Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    autosize,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    Min OA Sched,            !- Minimum Outdoor Air Schedule Name
+    DifferentialDryBulb,     !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    19,                      !- Economizer Upper Temperature Limit {C}
+    ,                        !- Economizer Lower Temperature Limit {C}
+    ,                        !- Economizer Upper Enthalpy Limit {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    BlowThrough,             !- Supply Fan Placement
+    StayOff,                 !- Night Cycle Control
+    ,                        !- Night Cycle Control Zone Name
+    None,                    !- Heat Recovery Type
+    0.70,                    !- Sensible Heat Recovery Effectiveness
+    0.65,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Dehumidification Control Type
+    ,                        !- Dehumidification Control Zone Name
+    60.0,                    !- Dehumidification Setpoint {percent}
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690.0,                  !- Humidifier Rated Electric Power {W}
+    ,                        !- Humidifier Control Zone Name
+    30.0;                    !- Humidifier Setpoint {percent}
+
+  HVACTemplate:System:Unitary,
+    Furnace DX 2-1,          !- Name
+    AlwaysOn,                !- System Availability Schedule Name
+    SPACE2-1,                !- Control Zone or Thermostat Location Name
+    autosize,                !- Supply Fan Maximum Flow Rate {m3/s}
+    FanAvailSched,           !- Supply Fan Operating Mode Schedule Name
+    0.7,                     !- Supply Fan Total Efficiency
+    600,                     !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    14.0,                    !- Cooling Design Supply Air Temperature {C}
+    autosize,                !- Cooling Coil Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3,                       !- Cooling Coil Rated COP {W/W}
+    Gas,                     !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    50.0,                    !- Heating Design Supply Air Temperature {C}
+    autosize,                !- Heating Coil Capacity {W}
+    0.8,                     !- Gas Heating Coil Efficiency
+    0.0,                     !- Gas Heating Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    autosize,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    Min OA Sched,            !- Minimum Outdoor Air Schedule Name
+    DifferentialDryBulb,     !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    19,                      !- Economizer Upper Temperature Limit {C}
+    ,                        !- Economizer Lower Temperature Limit {C}
+    ,                        !- Economizer Upper Enthalpy Limit {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    BlowThrough,             !- Supply Fan Placement
+    StayOff,                 !- Night Cycle Control
+    ,                        !- Night Cycle Control Zone Name
+    None,                    !- Heat Recovery Type
+    0.70,                    !- Sensible Heat Recovery Effectiveness
+    0.65,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Dehumidification Control Type
+    ,                        !- Dehumidification Control Zone Name
+    60.0,                    !- Dehumidification Setpoint {percent}
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690.0,                  !- Humidifier Rated Electric Power {W}
+    ,                        !- Humidifier Control Zone Name
+    30.0;                    !- Humidifier Setpoint {percent}
+
+  HVACTemplate:System:Unitary,
+    Furnace DX 3-1,          !- Name
+    AlwaysOn,                !- System Availability Schedule Name
+    SPACE3-1,                !- Control Zone or Thermostat Location Name
+    autosize,                !- Supply Fan Maximum Flow Rate {m3/s}
+    FanAvailSched,           !- Supply Fan Operating Mode Schedule Name
+    0.7,                     !- Supply Fan Total Efficiency
+    600,                     !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    14.0,                    !- Cooling Design Supply Air Temperature {C}
+    autosize,                !- Cooling Coil Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3,                       !- Cooling Coil Rated COP {W/W}
+    Gas,                     !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    50.0,                    !- Heating Design Supply Air Temperature {C}
+    autosize,                !- Heating Coil Capacity {W}
+    0.8,                     !- Gas Heating Coil Efficiency
+    0.0,                     !- Gas Heating Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    autosize,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    Min OA Sched,            !- Minimum Outdoor Air Schedule Name
+    DifferentialDryBulb,     !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    19,                      !- Economizer Upper Temperature Limit {C}
+    ,                        !- Economizer Lower Temperature Limit {C}
+    ,                        !- Economizer Upper Enthalpy Limit {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    DrawThrough,             !- Supply Fan Placement
+    StayOff,                 !- Night Cycle Control
+    ,                        !- Night Cycle Control Zone Name
+    None,                    !- Heat Recovery Type
+    0.70,                    !- Sensible Heat Recovery Effectiveness
+    0.65,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Dehumidification Control Type
+    ,                        !- Dehumidification Control Zone Name
+    60.0,                    !- Dehumidification Setpoint {percent}
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690.0,                  !- Humidifier Rated Electric Power {W}
+    ,                        !- Humidifier Control Zone Name
+    30.0;                    !- Humidifier Setpoint {percent}
+
+  HVACTemplate:System:Unitary,
+    Furnace DX 4-1,          !- Name
+    AlwaysOn,                !- System Availability Schedule Name
+    SPACE4-1,                !- Control Zone or Thermostat Location Name
+    autosize,                !- Supply Fan Maximum Flow Rate {m3/s}
+    FanAvailSched,           !- Supply Fan Operating Mode Schedule Name
+    0.7,                     !- Supply Fan Total Efficiency
+    600,                     !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    14.0,                    !- Cooling Design Supply Air Temperature {C}
+    autosize,                !- Cooling Coil Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3,                       !- Cooling Coil Rated COP {W/W}
+    Electric,                !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    50.0,                    !- Heating Design Supply Air Temperature {C}
+    autosize,                !- Heating Coil Capacity {W}
+    0.8,                     !- Gas Heating Coil Efficiency
+    0.0,                     !- Gas Heating Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    autosize,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    Min OA Sched,            !- Minimum Outdoor Air Schedule Name
+    DifferentialDryBulb,     !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    19,                      !- Economizer Upper Temperature Limit {C}
+    ,                        !- Economizer Lower Temperature Limit {C}
+    ,                        !- Economizer Upper Enthalpy Limit {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    DrawThrough,             !- Supply Fan Placement
+    StayOff,                 !- Night Cycle Control
+    ,                        !- Night Cycle Control Zone Name
+    None,                    !- Heat Recovery Type
+    0.70,                    !- Sensible Heat Recovery Effectiveness
+    0.65,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Dehumidification Control Type
+    ,                        !- Dehumidification Control Zone Name
+    60.0,                    !- Dehumidification Setpoint {percent}
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690.0,                  !- Humidifier Rated Electric Power {W}
+    ,                        !- Humidifier Control Zone Name
+    30.0;                    !- Humidifier Setpoint {percent}
+
+  HVACTemplate:System:Unitary,
+    Furnace DX 5-1,          !- Name
+    AlwaysOn,                !- System Availability Schedule Name
+    SPACE5-1,                !- Control Zone or Thermostat Location Name
+    autosize,                !- Supply Fan Maximum Flow Rate {m3/s}
+    FanAvailSched,           !- Supply Fan Operating Mode Schedule Name
+    0.7,                     !- Supply Fan Total Efficiency
+    600,                     !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    1,                       !- Supply Fan Motor in Air Stream Fraction
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    14.0,                    !- Cooling Design Supply Air Temperature {C}
+    autosize,                !- Cooling Coil Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3,                       !- Cooling Coil Rated COP {W/W}
+    Electric,                !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    50.0,                    !- Heating Design Supply Air Temperature {C}
+    autosize,                !- Heating Coil Capacity {W}
+    0.8,                     !- Gas Heating Coil Efficiency
+    0.0,                     !- Gas Heating Coil Parasitic Electric Load {W}
+    autosize,                !- Maximum Outdoor Air Flow Rate {m3/s}
+    autosize,                !- Minimum Outdoor Air Flow Rate {m3/s}
+    Min OA Sched,            !- Minimum Outdoor Air Schedule Name
+    DifferentialDryBulb,     !- Economizer Type
+    NoLockout,               !- Economizer Lockout
+    19,                      !- Economizer Upper Temperature Limit {C}
+    ,                        !- Economizer Lower Temperature Limit {C}
+    ,                        !- Economizer Upper Enthalpy Limit {J/kg}
+    ,                        !- Economizer Maximum Limit Dewpoint Temperature {C}
+    ,                        !- Supply Plenum Name
+    ,                        !- Return Plenum Name
+    BlowThrough,             !- Supply Fan Placement
+    StayOff,                 !- Night Cycle Control
+    ,                        !- Night Cycle Control Zone Name
+    None,                    !- Heat Recovery Type
+    0.70,                    !- Sensible Heat Recovery Effectiveness
+    0.65,                    !- Latent Heat Recovery Effectiveness
+    None,                    !- Dehumidification Control Type
+    ,                        !- Dehumidification Control Zone Name
+    60.0,                    !- Dehumidification Setpoint {percent}
+    None,                    !- Humidifier Type
+    ,                        !- Humidifier Availability Schedule Name
+    0.000001,                !- Humidifier Rated Capacity {m3/s}
+    2690.0,                  !- Humidifier Rated Electric Power {W}
+    ,                        !- Humidifier Control Zone Name
+    30.0;                    !- Humidifier Setpoint {percent}

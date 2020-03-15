@@ -1,0 +1,13 @@
+multi.fitness.num-objectives 	= 2
+
+# max and min values of all each objective function
+multi.fitness.max 		= 1
+multi.fitness.min 		= 0
+
+# override specific max and min values, e.g
+# multi.fitness.max.0		= 1000
+
+# Use a statistics object which dumps the front
+stat =                                          ec.multiobjective.MultiObjectiveStatistics
+stat.front =                                    $front.stat
+

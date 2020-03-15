@@ -1,0 +1,71 @@
+  Material,
+    I04 89mm batt insulation,!- Name
+    VeryRough,               !- Roughness
+    0.0894,                  !- Thickness {m}
+    0.05,                    !- Conductivity {W/m-K}
+    19,                      !- Density {kg/m3}
+    960;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    I05 154mm batt insulation,  !- Name
+    VeryRough,               !- Roughness
+    0.1544,                  !- Thickness {m}
+    0.05,                    !- Conductivity {W/m-K}
+    19,                      !- Density {kg/m3}
+    960;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    I06 244mm batt insulation,  !- Name
+    VeryRough,               !- Roughness
+    0.2438,                  !- Thickness {m}
+    0.05,                    !- Conductivity {W/m-K}
+    19,                      !- Density {kg/m3}
+    960;                     !- Specific Heat {J/kg-K}
+
+    Material,
+    I01 25mm insulation board,  !- Name
+    MediumRough,             !- Roughness
+    0.0254,                  !- Thickness {m}
+    0.03,                    !- Conductivity {W/m-K}
+    43,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+   Material,
+    I02 50mm insulation board,  !- Name
+    MediumRough,             !- Roughness
+    0.0508,                  !- Thickness {m}
+    0.03,                    !- Conductivity {W/m-K}
+    43,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+   Material,
+    I03 75mm insulation board,  !- Name
+    MediumRough,             !- Roughness
+    0.0762,                  !- Thickness {m}
+    0.03,                    !- Conductivity {W/m-K}
+    43,                      !- Density {kg/m3}
+    1210;                    !- Specific Heat {J/kg-K}
+
+    Material,
+    Insulation: Glass fiber - organic bonded - 25mm,  !- Name
+    MediumRough,             !- Roughness
+    0.025,                   !- Thickness {m}
+    0.036,                   !- Conductivity {W/m-K}
+    64,                      !- Density {kg/m3}
+    960;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Glass fiber - organic bonded - 50mm,  !- Name
+    MediumRough,             !- Roughness
+    0.05,                    !- Thickness {m}
+    0.036,                   !- Conductivity {W/m-K}
+    140,                     !- Density {kg/m3}
+    960;                     !- Specific Heat {J/kg-K}
+
+  Material,
+    Insulation: Glass fiber - organic bonded - 75mm,  !- Name
+    MediumRough,             !- Roughness
+    0.075,                   !- Thickness {m}
+    0.036,                   !- Conductivity {W/m-K}
+    140,                     !- Density {kg/m3}
+    960;                     !- Specific Heat {J/kg-K}

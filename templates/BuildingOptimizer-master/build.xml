@@ -1,0 +1,184 @@
+<project xmlns:jacoco="antlib:org.jacoco.ant">
+	
+	<!-- SETUP VARIABLES AND PATHS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<property name="" value="" />
+
+	<property name="lib.dir" value="lib" />
+	<property name="src.dir" location="src/" />
+	<property name="build.dir" location="bin/" />
+	<property name="dist.dir" location="dist/" />
+	<property name="dist.name" value="Datagen" />
+	<property name="config.logging.dir" value="config/logging" />
+	<property name="config.dir" value="config" />
+	<property name="version" value="1.0" />
+
+	<!-- Load the log4j properties -->
+	<loadproperties>
+		<file file="config/logging/log4j.properties" />
+	</loadproperties>
+
+	<!-- The standard classpath for building the system -->
+	<path id="build.classpath">
+		<fileset dir="${lib.dir}" includes="*.jar" />
+	</path>
+
+	<!-- The classpath for running the system -->
+	<path id="run.classpath">
+		<pathelement path="${build.dir}"/>
+		<fileset dir="${lib.dir}" includes="*.jar"/>
+		<fileset dir="${build.dir}" includes="*.class" />
+	</path>
+
+	<!--The classpath for running a task and including the log4j properties-->
+	<path id="run.classpath.logging">
+		<pathelement path="${build.dir}"/>
+		<file file="${config.logging.dir}" />
+		<fileset dir="${lib.dir}" includes="*.jar"/>
+	</path>
+
+	<property name="result.dir" location="./bin" />
+	<property name="result.classes.dir" location="${result.dir}/" />
+	<property name="result.report.dir" location="${result.dir}/site/jacoco" />
+	<property name="result.exec.file" location="${result.dir}/jacoco.exec" />
+
+	<taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
+		<classpath path="${lib.dir}/jacocoant.jar"/>
+	</taskdef>
+
+	<!-- Javadoc task setup -->
+	<!-- Based on the demo Javadoc settings on the Ant web page. -->
+	<target name="javadoc">
+		<javadoc sourcepath="src"
+				 excludepackagenames="test"
+				 defaultexcludes="yes"
+				 destdir="doc/api"
+				 author="true"
+				 version="true"
+				 use="true"
+				 windowtitle="Datagen API">
+			<doctitle><![CDATA[<h1>Datagen</h1>]]></doctitle>
+			<bottom><![CDATA[<i>Copyright &#169; 2013, Dibyajoti Mukherjee</i>]]></bottom>
+			<tag name="todo" scope="all" description="To do:"/>
+			<link offline="true" href="http://docs.oracle.com/javase/7/docs/api/" packagelistLoc="C:\tmp"/>
+			<link href="http://docs.oracle.com/javase/7/docs/api/"/>
+		</javadoc>
+	</target>
+		
+	<!-- BASIC TARGETS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	<!-- CLEANING TASK - "ant clean" -->
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+		<delete dir="${result.dir}"/>
+		<delete dir="Output" />
+		<delete>
+			<fileset dir="." includes="*.stat" />
+		</delete>
+	</target>
+	
+	<!-- COMPILING TASK - "ant compile" --> 
+	<target name="build">
+		<mkdir dir="${build.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false" debug="true" debuglevel="vars,lines,source">
+			<classpath refid="build.classpath"/>
+			<compilerarg value="-Xlint:unchecked"/> 
+			<compilerarg value="-Xlint:deprecation"/> 
+		</javac>
+	</target>
+ 
+	<target name="compile">
+		<mkdir dir="${build.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false" debug="true" debuglevel="vars,lines,source">
+			<classpath refid="build.classpath"/>
+			<compilerarg value="-Xlint:unchecked"/> 
+			<compilerarg value="-Xlint:deprecation"/> 
+		</javac>
+	</target>
+
+	<!-- RUNNING TARGETS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	<!-- RUNNING TASK - "ant run" -->
+	<target name="run">
+		<antcall target="Evolve">
+		</antcall>
+	</target>
+
+	<!-- RUNNING TASK - "ant evolve" -->
+	<target name="Evolve" depends="compile">
+		<java fork="true" classname="ec.Evolve" maxmemory="1024m">
+			<arg line="${args}"/>
+			<classpath refid="run.classpath" />
+        </java>
+	</target>
+
+	<!-- RUNNING TASK - "ant slave" -->
+	<target name="slave" depends="compile">
+		<java fork="true" classname="ec.eval.Slave" maxmemory="1024m">
+			<arg line="${args}"/>
+			<classpath refid="run.classpath" />
+        </java>
+	</target>
+	
+	
+	<!-- RUNNING TASK - "ant runeplus" -->
+	<target name="runeplus" depends="compile">
+		<java fork="true" classname="building.RunEnergyPlus" maxmemory="1024m">
+			<arg line="${args}"/>
+			<classpath refid="run.classpath" />
+        </java>
+	</target>
+	
+	<!-- RUNNING TASK - "ant idf" -->
+	<target name="idf" depends="compile">
+		<java fork="true" classname="building.IDFHelper" maxmemory="1024m">
+			<arg line="${args}"/>
+			<classpath refid="run.classpath" />
+        </java>
+	</target>
+
+	<!-- RUNNING TASK - "ant test" -->
+	<target name="test" depends="compile">
+		<junit fork="yes">
+			<test name="test.AllTests" />
+			<classpath refid="run.classpath.logging" />
+			<formatter type="brief" usefile="false" />
+		</junit>
+	</target>
+
+	<!-- RUNNING TASK - "ant coveragetest" -->
+	<target name="coveragetest" depends="compile">
+		<jacoco:coverage destfile="${result.exec.file}" excludes="test.*">
+			<junit fork="yes" forkmode="once">
+				<test name="test.MasterTestSuite" />
+				<classpath refid="run.classpath" />
+				<formatter type="brief" usefile="false" />
+			</junit>
+		</jacoco:coverage>
+	</target>
+
+	<!-- RUNNING TASK - "ant coverage" -->
+	<target name="coverage" depends="coveragetest">
+		<jacoco:report>
+			<executiondata>
+				<file file="${result.exec.file}" />
+			</executiondata>
+
+			<structure name="TweetAnalyzeCoverage Report">
+				<classfiles>
+					<fileset dir="${result.classes.dir}">
+					    <exclude name="**/*Test*.class" />
+      				</fileset>
+				</classfiles>
+				<sourcefiles encoding="UTF-8">
+					<fileset dir="${src.dir}" />
+				</sourcefiles>
+			</structure>
+			
+			<html destdir="${result.report.dir}/TweetAnalyzeTest/" />
+			<csv destfile="${result.report.dir}/TweetAnalyzeTest/report.csv" />
+			<xml destfile="${result.report.dir}/TweetAnalyzeTest/report.xml" />
+		</jacoco:report>
+	</target>
+
+</project>

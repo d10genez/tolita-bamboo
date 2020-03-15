@@ -1,0 +1,213 @@
+! PTAC (packaged terminal air conditioner) units with a hot water loop serving some zones.
+
+HVACTemplate:Thermostat,
+    All Zones,               !- Name
+    Htg-SetP-Sch,            !- Heating Setpoint Schedule Name
+    ,                        !- Constant Heating Setpoint {C}
+    Clg-SetP-Sch,            !- Cooling Setpoint Schedule Name
+    ;                        !- Constant Cooling Setpoint {C}
+
+  HVACTemplate:Zone:PTAC,
+    SPACE1-1,                !- Zone Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Cooling Supply Air Flow Rate {m3/s}
+    autosize,                !- Heating Supply Air Flow Rate {m3/s}
+    ,                        !- No Load Supply Air Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- System Availability Schedule Name
+    Cycling,                 !- Supply Fan Operating Mode Schedule Name
+    DrawThrough,             !- Supply Fan Placement
+    0.7,                     !- Supply Fan Total Efficiency
+    75,                      !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    autosize,                !- Cooling Coil Rated Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3,                       !- Cooling Coil Rated COP {W/W}
+    Electric,                !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    autosize,                !- Heating Coil Capacity {W}
+    0.8,                     !- Gas Heating Coil Efficiency
+    ,                        !- Gas Heating Coil Parasitic Electric Load {W}
+    ,                        !- Dedicated Outdoor Air System Name
+    SupplyAirTemperature,    !- Zone Cooling Design Supply Air Temperature Input Method
+    14.0,                    !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SupplyAirTemperature,    !- Zone Heating Design Supply Air Temperature Input Method
+    50.0,                    !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Zone:PTAC,
+    SPACE2-1,                !- Zone Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Cooling Supply Air Flow Rate {m3/s}
+    autosize,                !- Heating Supply Air Flow Rate {m3/s}
+    ,                        !- No Load Supply Air Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- System Availability Schedule Name
+    Continuous,              !- Supply Fan Operating Mode Schedule Name
+    DrawThrough,             !- Supply Fan Placement
+    0.7,                     !- Supply Fan Total Efficiency
+    75,                      !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    autosize,                !- Cooling Coil Rated Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3,                       !- Cooling Coil Rated COP {W/W}
+    HotWater,                !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    autosize,                !- Heating Coil Capacity {W}
+    0.8,                     !- Gas Heating Coil Efficiency
+    ,                        !- Gas Heating Coil Parasitic Electric Load {W}
+    ,                        !- Dedicated Outdoor Air System Name
+    SupplyAirTemperature,    !- Zone Cooling Design Supply Air Temperature Input Method
+    14.0,                    !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SupplyAirTemperature,    !- Zone Heating Design Supply Air Temperature Input Method
+    50.0,                    !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Zone:PTAC,
+    SPACE3-1,                !- Zone Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Cooling Supply Air Flow Rate {m3/s}
+    autosize,                !- Heating Supply Air Flow Rate {m3/s}
+    ,                        !- No Load Supply Air Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- System Availability Schedule Name
+    Cycling,                 !- Supply Fan Operating Mode Schedule Name
+    BlowThrough,             !- Supply Fan Placement
+    0.7,                     !- Supply Fan Total Efficiency
+    75,                      !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    autosize,                !- Cooling Coil Rated Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3,                       !- Cooling Coil Rated COP {W/W}
+    HotWater,                !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    autosize,                !- Heating Coil Capacity {W}
+    0.8,                     !- Gas Heating Coil Efficiency
+    ,                        !- Gas Heating Coil Parasitic Electric Load {W}
+    ,                        !- Dedicated Outdoor Air System Name
+    SupplyAirTemperature,    !- Zone Cooling Design Supply Air Temperature Input Method
+    14.0,                    !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SupplyAirTemperature,    !- Zone Heating Design Supply Air Temperature Input Method
+    50.0,                    !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Zone:PTAC,
+    SPACE4-1,                !- Zone Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Cooling Supply Air Flow Rate {m3/s}
+    autosize,                !- Heating Supply Air Flow Rate {m3/s}
+    ,                        !- No Load Supply Air Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- System Availability Schedule Name
+    Continuous,              !- Supply Fan Operating Mode Schedule Name
+    BlowThrough,             !- Supply Fan Placement
+    0.7,                     !- Supply Fan Total Efficiency
+    75,                      !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    autosize,                !- Cooling Coil Rated Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3,                       !- Cooling Coil Rated COP {W/W}
+    Electric,                !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    autosize,                !- Heating Coil Capacity {W}
+    0.8,                     !- Gas Heating Coil Efficiency
+    ,                        !- Gas Heating Coil Parasitic Electric Load {W}
+    ,                        !- Dedicated Outdoor Air System Name
+    SupplyAirTemperature,    !- Zone Cooling Design Supply Air Temperature Input Method
+    14.0,                    !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SupplyAirTemperature,    !- Zone Heating Design Supply Air Temperature Input Method
+    50.0,                    !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Zone:PTAC,
+    SPACE5-1,                !- Zone Name
+    All Zones,               !- Template Thermostat Name
+    autosize,                !- Cooling Supply Air Flow Rate {m3/s}
+    autosize,                !- Heating Supply Air Flow Rate {m3/s}
+    ,                        !- No Load Supply Air Flow Rate {m3/s}
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    flow/person,             !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow Rate per Person {m3/s}
+    ,                        !- Outdoor Air Flow Rate per Zone Floor Area {m3/s-m2}
+    ,                        !- Outdoor Air Flow Rate per Zone {m3/s}
+    ,                        !- System Availability Schedule Name
+    Cycling,                 !- Supply Fan Operating Mode Schedule Name
+    DrawThrough,             !- Supply Fan Placement
+    0.7,                     !- Supply Fan Total Efficiency
+    75,                      !- Supply Fan Delta Pressure {Pa}
+    0.9,                     !- Supply Fan Motor Efficiency
+    SingleSpeedDX,           !- Cooling Coil Type
+    ,                        !- Cooling Coil Availability Schedule Name
+    autosize,                !- Cooling Coil Rated Capacity {W}
+    autosize,                !- Cooling Coil Rated Sensible Heat Ratio
+    3,                       !- Cooling Coil Rated COP {W/W}
+    Gas,                     !- Heating Coil Type
+    ,                        !- Heating Coil Availability Schedule Name
+    autosize,                !- Heating Coil Capacity {W}
+    0.8,                     !- Gas Heating Coil Efficiency
+    ,                        !- Gas Heating Coil Parasitic Electric Load {W}
+    ,                        !- Dedicated Outdoor Air System Name
+    SupplyAirTemperature,    !- Zone Cooling Design Supply Air Temperature Input Method
+    14.0,                    !- Zone Cooling Design Supply Air Temperature {C}
+    ,                        !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SupplyAirTemperature,    !- Zone Heating Design Supply Air Temperature Input Method
+    50.0,                    !- Zone Heating Design Supply Air Temperature {C}
+    ;                        !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+
+  HVACTemplate:Plant:HotWaterLoop,
+    Hot Water Loop,          !- Name
+    ,                        !- Pump Schedule Name
+    INTERMITTENT,            !- Pump Control Type
+    Default,                 !- Hot Water Plant Operation Scheme Type
+    ,                        !- Hot Water Plant Equipment Operation Schemes Name
+    ,                        !- Hot Water Setpoint Schedule Name
+    82,                      !- Hot Water Design Setpoint {C}
+    ConstantFlow,            !- Hot Water Pump Configuration
+    179352,                  !- Hot Water Pump Rated Head {Pa}
+    OutdoorAirTemperatureReset,  !- Hot Water Setpoint Reset Type
+    82.2,                    !- Hot Water Setpoint at Outdoor Dry-Bulb Low {C}
+    -6.7,                    !- Hot Water Reset Outdoor Dry-Bulb Low {C}
+    65.6,                    !- Hot Water Setpoint at Outdoor Dry-Bulb High {C}
+    10;                      !- Hot Water Reset Outdoor Dry-Bulb High {C}
+
+  HVACTemplate:Plant:Boiler,
+    Main Boiler,             !- Name
+    HotWaterBoiler,          !- Boiler Type
+    autosize,                !- Capacity {W}
+    0.8,                     !- Efficiency
+    NaturalGas,              !- Fuel Type
+    1,                       !- Priority
+    ;                        !- Sizing Factor

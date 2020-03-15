@@ -1,13 +1,12 @@
 
 # tolita-bamboo 
 
-Este proyecto es la estructura base con Guadua angustifolia, para una casa o área comercial. Su diseño se ha basado en piezas de cerámica encontradas en Ecuador, provincia de Manabí, pertenecientes a la cultura Tolita, que se remonta entre 350 a.C. y 350 d.C. Su cimentaciones están concebidas en hormigón armado, con varillas conectadas a la base, para encajar a la caña.
-
-Este proyecto es la estructura base con Guadua angustifolia, para una casa o área comercial. Su diseño se ha basado en piezas de cerámica encontradas en Ecuador, provincia de Manabí, pertenecientes a la cultura Tolita, que se remonta entre 350 a.C. y 350 d.C. Su cimentaciones están concebidas en hormigón armado, con varillas conectadas a la base, para encajar a la caña
-Este proyecto es la estructura base con Guadua angustifolia, para una casa o área comercial. Su diseño se ha basado en piezas de cerámica encontradas en Ecuador, provincia de Manabí, pertenecientes a la cultura Tolita, que se remonta entre 350 a.C. y 350 d.C. Su cimentaciones están concebidas en hormigón armado, con varillas conectadas a la base, para encajar a la caña.
+Este proyecto es una nave en Bambú o Guadua angustifoli. Tienen una planta libre que puede variar de acuerdo a requerimientos. Tiene una luz máxima entre centros de columna de seis metros. Se incluyen procedimientos de verificación estructurales y simulaciones en EnergyPlus que podrían replicarse a cualquier proyecto.
+El diseño se ha basado en piezas de cerámica encontradas en Ecuador, provincia de Manabí, pertenecientes a la cultura Tolita, que se remonta entre 350 a.C. y 350 d.C. Su cimentaciones están concebidas en hormigón armado, con varillas conectadas a la base, para encajar a la caña.
 
 Los siguientes archivos, podrían también interesar a arquitectos, ingenieros o diseñadores, para adaptar sus futuros proyectos a este modelo, o en definitiva promover el uso de bambú en el mundo. 
 
+![alt tag](http://www.cinemonstruo.com/tolita-bamboo/tolita-bamboo-2.0.png)
 
 ![alt tag](http://www.cinemonstruo.com/tolita-bamboo/tolita-perspectiva.png)
 
@@ -15,19 +14,9 @@ Los siguientes archivos, podrían también interesar a arquitectos, ingenieros o
 
 ![alt tag](http://www.cinemonstruo.com/tolita-bamboo/tolita-frontal.png)
 
-_tolita-bamboo.dwg: Archivo con los planos: Planta cimentación, Planta entrepiso y estructura cubierta, Vista frontal y lateral derecha, Vista posterior y lateral izquierda, Corte X y Corte Y 
+_tolita-bamboo-mat.blend: Archivo modelado 3D en Blender con dos posibles adaptaciones.
 
-_tolita-bamboo.pln: Archivo Archicad, con los planos antes descritos y además vistas en perspectiva 3D.
-
-_PLANTA CIMENTACIÓN Y ENTREPISO.PDF: Archivo PDF, extraído del archivo tolita-bamboo.dwg
-
-_PLANTA ENTREPISO Y ESTRUCTURA CUBIERTA.PDF: Archivo PDF, extraído del archivo tolita-bamboo.dwg
-
-_ELEVACIÓN FRONTAL Y LATERAL DERECHA.PDF: Archivo PDF, extraído del archivo tolita-bamboo.dwg
-
-_ELEVACIÓN POSTERIOR Y LATERAL IZQUIERDA.PDF: Archivo PDF, extraído del archivo tolita-bamboo.dwg
-
-_CORTE X Y CORTE Y: Archivo PDF, extraído del archivo tolita-bamboo.dwg
+_TOLITA.FREECAD.FCStd: Archivo modelado 3D en FreeCAD
 
 _tolita-bamboo-detalles.dwg: Archivo DWG, que contiene los detalles constructivos de las uniones usadas para la estructura. Exíste tres tipos de uniones: estructura, de presión y de amarre.
 
@@ -36,6 +25,10 @@ _DETALLES.PDF: Archivo PDF, extraído del archivo tolita-bamboo-detalles.dwg
 _tolita-bamboo-procesoconstructivo.dwg: Archivo DWG, contiene en detalle el proceso constructivo paso a paso para armar la estructura. 
 
 _PROCESO CONSTRUCTIVO.PDF, extraído del archivo tolita-bamboo-procesoconstructivo.dwg
+
+
+
+
 
 # Terminos de uso
 
