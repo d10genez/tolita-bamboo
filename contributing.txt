@@ -1,0 +1,93 @@
+# Contribuciones
+
+Al contribuir a este depósito, por favor, primero discuta el cambio que desea 
+hacer a través de la emisión, correo electrónico, o cualquier otro método con 
+los dueños de este depósito antes de hacer un cambio. 
+
+Tenga en cuenta que tenemos un código de conducta, por favor, sígalo en todas 
+sus interacciones con el proyecto.
+
+## Proceso de Pull Request 
+
+1. Asegurece de que el archivo que vaya a subir cumpla con las varificaciones 
+   estrucutrales 
+2. Actualizar el archivo README.md con el detalle de el/los archivos que se 
+   agregan o modifican .
+3. Dadas las características del proyecto rara vez se fusionan los Pull Request, 
+   se analizan y valoran las ramificaciones
+
+## Código de Conducta
+
+### Nuestra Promesa
+
+En interés de fomentar un entorno abierto y acogedor, nosotros, como contribuyentes 
+y mantenedores, nos comprometemos a hacer que la participación en nuestro proyecto 
+y nuestra comunidad una experiencia libre de acoso para todos, independientemente de 
+la edad, tamaño corporal, discapacidad, etnia, identidad y expresión de género, nivel 
+de experiencia, nacionalidad, apariencia personal, raza, religión o identidad y 
+orientación sexual.
+
+
+### Nuestros Estandares
+
+Ejemplos de comportamientos que contribuyen a crear un ambiente positivo
+incluyen:
+
+* Usar un lenguaje acogedor e inclusivo
+* Siendo respetuosos con los diferentes puntos de vista y experiencias
+* Aceptando con gracia la crítica constructiva
+* Centrándose en lo que es mejor para la comunidad
+* Mostrando empatía hacia otros miembros de la comunidad
+
+Los ejemplos de comportamiento inaceptable de los participantes incluyen:
+
+* El uso de lenguaje o imágenes sexualizadas y atención sexual no deseada o avances
+* Trolling, comentarios insultantes/derogatorios, y ataques personales o políticos
+* Acoso público o privado
+* Publicar información privada de otros, como una dirección, sin permiso explícito
+* Otros comportamientos que podrían considerarse razonablemente inapropiados en un 
+  entorno profesional
+
+
+### Nuestras Responsabilidades
+
+Los encargados del mantenimiento del proyecto son responsables de aclarar los estándares 
+de comportamiento aceptable y se espera que tomen las medidas correctivas adecuadas y 
+justas en respuesta a cualquier caso de comportamiento inaceptable.
+
+Los mantenedores del proyecto tienen el derecho y la responsabilidad de eliminar, editar 
+o Rechazar los comentarios, las confirmaciones, el código, las ediciones wiki, los temas 
+y otras contribuciones. que no se ajusten al presente Código de Conducta, o prohibir 
+temporalmente o permanentemente cualquier contribuyente por otros comportamientos que 
+consideren inapropiados, amenazante, ofensivo o dañino.
+
+### Alcance
+
+Este Código de Conducta se aplica tanto en los espacios de los proyectos como en los 
+espacios públicos cuando un individuo está representando el proyecto o su comunidad. 
+Ejemplos de representar a un proyecto o comunidad incluyen el uso de un correo electrónico 
+oficial del proyecto dirección, publicando a través de una cuenta oficial de medios de 
+comunicación social, o actuando como un designado en un evento en línea o fuera de línea. 
+La representación de un proyecto puede ser definidos y aclarados por los mantenedores del 
+proyecto.
+
+### Aplicación de la Ley
+
+Los casos de comportamiento abusivo, acosador o inaceptable pueden ser reportados contactando
+al equipo del proyecto en diogenez@gmail.com. Todas las quejas serán revisadas e investigadas
+y darán lugar a una respuesta que se considera necesaria y apropiada a las circunstancias. 
+El equipo del proyecto está obligado a mantener la confidencialidad con respecto al informante 
+de un incidente. Pueden publicarse por separado más detalles sobre políticas de aplicación 
+específicas.
+
+Los encargados del proyecto que no cumplan o hagan cumplir el Código de Conducta en buena medida 
+fe puede enfrentarse a repercusiones temporales o permanentes según lo determinen otros miembros 
+de la dirección del proyecto.
+
+### Atribución
+
+This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
+available at [http://contributor-covenant.org/version/1/4][version]
+
+[homepage]: http://contributor-covenant.org
+[version]: http://contributor-covenant.org/version/1/4/
