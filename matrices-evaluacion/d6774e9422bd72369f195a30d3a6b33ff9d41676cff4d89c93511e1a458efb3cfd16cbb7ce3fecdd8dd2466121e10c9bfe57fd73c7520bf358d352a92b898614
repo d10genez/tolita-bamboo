@@ -1,0 +1,68 @@
+source,target,value
+"Funcional","Funcionalidad Requerida",100.000
+"Funcional","Evolución del producto",100.000
+"Funcional","Listado de funcionalidades",100.000
+Técnico,Número de adaptaciones (Pull Request),50.000
+Técnico,Métricas de código fuente,50.000
+Técnico,Frecuencia de cambio,50.000
+Técnico,Dependencia de otros 'software',50.000
+Organizativo,Número de colaboradores,50.000
+Organizativo,Número de usuarios,50.000
+Organizativo,Número de visitas,50.000
+Organizativo,La comunidad existe,100.000
+Organizativo,Evolución del producto,100.000
+Organizativo,Soporte disponible,100.000
+Legal,Sin efecto copyleft para complementos o combinaciones,100.000
+Legal,Sin responsabilidad por el código de terceros,100.000
+Legal,Sin infracciones de patentes,100.000
+Legal,¿En cuántos leguajes se ha documentado?,50.000
+Legal,¿Cuál es la participación y hambiente en los foros?,50.000
+Político,Influir en el desarrollo ulterior sobre las necesidades individuales,100.000
+Político,Efectos del marketing a traves del uso y participación,50.000
+Listado de funcionalidades,Servidor,50.000
+Listado de funcionalidades,Repositorio,50.000
+Listado de funcionalidades,Gestion de versiones,50.000
+Listado de funcionalidades,Foros,50.000
+Funcionalidad Requerida,Gestión y administración,50.000
+Evolución del producto,Construcción de prototipo,50.000
+Gestión y administración,CUMPLE,25.000
+Construcción de prototipo,CUMPLE,25.000
+Técnico,Plataformas de destino compatibles,100.000
+Técnico,Fiabilidad y mantenimiento,100.000
+Plataformas de destino compatibles,Compatibilidad SO,50.000
+Plataformas de destino compatibles,Compatibilidad entre formatos,50.000
+Fiabilidad y mantenimiento,Métricas del código fuente,50.000
+Compatibilidad SO,CUMPLE,25.000
+Compatibilidad entre formatos,PARCIALMENTE,25.000
+Métricas del código fuente,CUMPLE,25.000
+Número de adaptaciones (Pull Request),'2',25.000
+Métricas de código fuente,Reportes GitHub,25.000
+Frecuencia de cambio,Reportes GitHub,25.000
+Dependencia de otros 'software',Reportes GitHub,25.000
+La comunidad existe,Trafico del repositorio,50.000
+Evolución del producto,Métricas de código fuente,50.000
+Soporte disponible,Colaboradores/Usuarios,50.000
+Trafico del repositorio,CUMPLE,25.000
+Métricas de código fuente,CUMPLE,25.000
+Colaboradores/Usuarios,CUMPLE,25.000
+Número de colaboradores,'2',25.000
+Número de usuarios,'2',25.000
+Número de visitas,25/mes,25.000
+Sin efecto copyleft para complementos o combinaciones,CreativeCommons (parámetrización),50.000
+Sin responsabilidad por el código de terceros,Garantías sobre los prototipos,50.000
+Sin infracciones de patentes,No uso de patentes,50.000
+CreativeCommons (parámetrización),CUMPLE,25.000
+Garantías sobre los prototipos,CUMPLE,25.000
+No uso de patentes,PARCIALMENTE,25.000
+Legal,Efectos de las licencias,100.000
+Legal,Responsabilidad en la reproducción,100.000
+Efectos de las licencias,Comercializar obras derivadas,50.000
+Responsabilidad en la reproducción,CreativeCommons (parámetrización),50.000
+Comercializar obras derivadas,CUMPLE,25.000
+CreativeCommons (parámetrización),CUMPLE,25.000
+Influir en el desarrollo ulterior sobre las necesidades individuales,Número de adaptaciones (Pull Request),50.000
+Efectos del marketing a traves del uso y participación,Publicidad por exhibición,50.000
+Número de adaptaciones (Pull Request),CUMPLE,25.000
+Publicidad por exhibición,CUMPLE,25.000
+¿En cuántos leguajes se ha documentado?,'1',25.000
+¿Cuál es la participación y hambiente en los foros?,PARCIALMENTE,25.000

@@ -1,0 +1,14 @@
+{
+  "name": "@jarrettmeyer/sankey-with-animated-gradients",
+  "main": "961e0659a77db0df@136.js",
+  "version": "136.0.0",
+  "homepage": "https://observablehq.com/@jarrettmeyer/sankey-with-animated-gradients",
+  "author": {
+    "name": "Jarrett Meyer",
+    "url": "https://observablehq.com/@jarrettmeyer"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
