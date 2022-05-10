@@ -6,7 +6,7 @@ El diseño se ha basado en piezas de cerámica encontradas en Ecuador, provincia
 
 Los siguientes archivos, podrían también interesar a arquitectos, ingenieros o diseñadores, para adaptar sus futuros proyectos a este modelo, o en definitiva promover el uso de bambú en el mundo. 
 
-![poster tolita-bamboo](https://github.com/d10genez/tolita-bamboo)
+![poster tolita-bamboo](https://www.cinemonstruo.com/blog/wp-content/uploads/2022/05/render.png)
 
 _tolita-bamboo-mat.blend: Archivo modelado 3D en Blender con dos posibles adaptaciones.
 
